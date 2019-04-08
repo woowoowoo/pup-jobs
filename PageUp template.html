@@ -1,0 +1,31 @@
+%begin_globals_asset_url^contains:public%
+<div class="content-block shim-pb0 shim-pt05">
+    <h1 class="heading-card">Current opportunities at Melbourne</h1>
+</div>
+%else_begin_globals_asset_url^contains:staff%
+<div class="content-block shim-pb0 shim-pt05">
+    <h1 class="heading-card">Current opportunities for existing staff at Melbourne</h1>
+    <p>This is a listing of ALL jobs currently advertised including those exclusive to current University Staff (i.e. “Internal Applicants Only” positions).</p>
+</div>
+%end_globals%
+<div class="section">
+<div class="section__inner shim-pt1">
+{form}
+    <div id="pup" class="grid">
+        <div class="cell cell--desk-2of3 pup-main">
+{messages}{pages}
+        </div>
+        <div class="cell cell--desk-1of3 pup-sidebar">
+            <p>
+{job-mail-subscribe-link}Job Alert{/job-mail-subscribe-link}
+                <a class="button" href="./?a=68887">Applicant log in</a>
+            </p>
+            <h2><label for="search-keyword">Job keyword search</label></h2>
+{search-keyword placeholder="eg: Melbourne, tutor, part time"}
+<!--@@            <h2>Current Job Filter</h2> @@-->
+{search-filters button-text="Filter Results"}
+        </div>
+    </div>
+{/form}
+</div>
+</div>

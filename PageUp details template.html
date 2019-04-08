@@ -1,0 +1,29 @@
+{job-content}
+<div class="job-detail-container">
+<h2 class="heading-page-sub">{job.title}</h2>
+<div class="job-summary">
+<ul>
+{job.external-job-no prefix="<li><h3>Job no:</h3> " suffix="</li>"}
+{job.work-type prefix="<li><h3>Work type:</h3> " suffix="</li>"}
+{job.locations prefix="<li><h3>Location:</h3> " suffix="</li>"}
+{job.brand prefix="<li><h3>Division/Faculty:</h3> " suffix="</li>"}
+{job.department prefix="<li><h3>Department/School:</h3> " suffix="</li>"}
+{job.pay-scale-area prefix="<li><h3>Salary:</h3> " suffix="</li>"}
+{job.role prefix="<li><h3>Role &amp; Superannuation rate:</h3> " suffix="</li>"}
+</ul>
+</div>
+<div class="job-details">
+{job.overview}
+{position-description-link}Position Description{/position-description-link}
+</div>
+<div class="job-footer">
+<ul>
+<li><h3>Advertised:</h3> {job.opening-date-utc format="dd MMM yyyy h:mm tt" add-offset="true"} {job.opening-date-time-zone}</li>
+<li><h3>Applications close:</h3> {job.closing-date-utc format="dd MMM yyyy h:mm tt" add-offset="true"} {job.closing-date-time-zone}</li>
+</ul>
+<div class="job-apply">{apply-link}Apply now{/apply-link}</div>
+</div>
+</div>
+<div class="job-nav">{back-link}Back to search results{/back-link} {employee-referral-link}Refer a friend{/employee-referral-link}</div>
+<div class="job-share">{social-media share-text="Share this:" more-text="More" links="facebook,twitter,linkedin,email" }</div>
+{/job-content}
