@@ -84,14 +84,12 @@ h1 {
 	list-style: none;
 	padding-left: 0;
 }
+.job-summary p, .job-footer p {
+	margin: 0 0 0.5rem;
+}
 @media screen and (min-width: 769px) {
 	#job-content {
 		padding-right: 8rem;
-	}
-}
-@media screen and (min-width: 900px) {
-	#job-content {
-		padding-right: 12rem;
 	}
 }
 #job-content .job-footer:after {
